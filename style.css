@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #352f5b;
+  color: #fff;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 50px;
+  background-image: linear-gradient(to top, #352f5b, rgba(255, 255, 255, 0.25));
+}
+.task {
+  width: 70%;
+  margin: 30px auto;
+  background: rgba(172, 214, 221, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: #fff solid 3px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+.task i {
+  cursor: pointer;
+  margin-left: 10px;
+  opacity: 0.4;
+  transition: all 0.3s;
+}
+.task .fa-star:hover {
+  color: orange;
+  opacity: 1;
+}
+.task .fa-trash-can:hover {
+  color: #fff;
+  opacity: 1;
+}
+.task .fa-face-angry {
+  color: rgb(247, 219, 98);
+  opacity: 1;
+  transition: all 0.3s;
+}
+.task .fa-face-angry:hover{
+    color: rgb(241, 108, 108);
+}
+
+.task p {
+  font-size: 24px;
+  white-space: nowrap;
+
+}
+
+.input {
+  text-align: center;
+  margin: 100px 0;
+}
+.input h2 {
+  font-size: 30px;
+}
+.input div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+  width: 100%;
+}
+.input div .fa-upload {
+  margin-left: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 25px 0 25px 15px;
+}
+.input div .fa-upload:hover {
+  color: rgb(11, 192, 192) !important ;
+}
+.input div input {
+  margin-right: 15px;
+  padding: 15px;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+}
+button {
+  all: unset;
+}
+.fa-heart{
+    color: red;
+    opacity: 1 !important;
+
+}
+.fa-heart:hover{
+    color: rgb(239, 102, 102);
+}
+.finsh{
+    text-decoration-line: line-through;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+
+    
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.addTasks{
+    text-align: center !important;
+    display: block;
+    
+}
+
+/* fo JS */
+.dn{
+    display: none !important;
+}
+.db{
+    display: block !important;
+}
+.star{
+    color: orange;
+    opacity: 1 !important;
+}
